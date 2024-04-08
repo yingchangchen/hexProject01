@@ -134,13 +134,15 @@ table {
 }
 
 .wrap {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
 .bar {
   background: #f6f6f8;
-  padding-right: 405px;
+  /* padding-right: 405px; */
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .bar ul {
   display: flex;
@@ -172,14 +174,22 @@ table {
 }
 
 .header {
-  height: 76px;
-  padding: 0px 417px 0px 404px;
+  max-width: 1100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
 
+.header h1 a {
+  background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png");
+  width: 224px;
+  height: 50px;
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .header ul {
   display: flex;
   align-items: center;
@@ -194,6 +204,7 @@ table {
 
   padding: 26px 21px;
   font-weight: 700;
+  border-bottom: 5px solid transparent;
 }
 
 .header li a:hover {
@@ -319,7 +330,7 @@ table {
 
 .form {
   background: -webkit-linear-gradient(top, #e1fdf6, #a4decf);
-  padding: 36px 594px;
+  padding: 36px 0;
   margin: 0 auto;
 }
 
@@ -340,6 +351,7 @@ table {
 .inputData {
   display: flex;
   justify-content: space-between;
+  width: 740px;
 }
 
 .personalData {
@@ -353,7 +365,7 @@ table {
 
 .personalData input {
   width: 351px;
-  height: 38px;
+  padding: 8px 0;
   margin: 8px 0px 16px 0px;
   border: 1px solid #aaaaaa;
   border-radius: 3px;
@@ -365,10 +377,11 @@ table {
 
 .text textarea {
   width: 352px;
-  height: 200px;
+  height: 213px;
   margin-top: 8px;
   border: 1px solid #aaaaaa;
   border-radius: 3px;
+  resize: none;
 }
 
 .text textarea:focus-visible {
@@ -393,10 +406,22 @@ table {
 }
 
 .footer {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 405px;
+  padding: 22px;
+}
+
+.footer h1 a {
+  background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png");
+  width: 171px;
+  height: 36px;
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .contact {
